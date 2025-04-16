@@ -59,19 +59,17 @@ print("4. Exit")
 # Loop to allow the user to perform multiple operations
 ans = "Y"
 while ans == "Y" or ans == "y":
-    # Get user choice for operation
     choice = int(input("Enter your choice: "))
     
     if choice == 1:
-        acc1.credit()  # Deposit money
+        acc1.credit() 
     elif choice == 2:
-        acc1.debit()  # Withdraw money
+        acc1.debit()  
     elif choice == 3:
-        acc1.final_balance()  # View balance
+        acc1.final_balance()  
     elif choice == 4:
-        break  # Exit the loop if the user chooses to quit
+        break  
     else:
         print("Invalid choice. Please enter a valid option.")
 
-    # Ask user if they want to continue
     ans = input("Do you want to continue? (Y/N): ")
