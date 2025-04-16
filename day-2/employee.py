@@ -50,15 +50,11 @@ class Engineer(Employee):
         self.name = name
         self.age = age
         
-        # Initialize the parent class (Employee) with default role, department, and salary
         super().__init__("AI Intern", "Python", "10000")
 
-# Create an instance of Engineer
 Kush = Engineer("Kush Doshi", 22)
 
-# Display details of the Engineer (inherited from Employee)
 Kush.showDetails()
 
-# Print individual attributes of the Engineer
 print("Name:", Kush.name)
 print("Age:", Kush.age)
