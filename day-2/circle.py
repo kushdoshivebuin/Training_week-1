@@ -13,23 +13,23 @@ class Circle:
         Parameters:
         radius (float): The radius of the circle.
         """
-        self.radius = radius  # Store the radius as an instance attribute
-        self.calcarea()  # Call method to calculate area
-        self.calcperi()  # Call method to calculate perimeter
+        self.radius = radius 
+        self.calcarea() 
+        self.calcperi()  
 
     def calcarea(self):
         """
         Calculate and print the area of the circle using the formula: π * radius^2
         """
-        area = 3.14 * self.radius * self.radius  # Formula for area of the circle
+        area = 3.14 * self.radius * self.radius  
         print("The area of the circle is:", area)
 
     def calcperi(self):
         """
         Calculate and print the perimeter (circumference) of the circle using the formula: 2 * π * radius
         """
-        perimeter = 2 * 3.14 * self.radius  # Formula for the perimeter (circumference)
+        perimeter = 2 * 3.14 * self.radius 
         print("The perimeter (circumference) of the circle is:", perimeter)
 
-# Create an instance of Circle with radius 5
+
 C1 = Circle(5)
