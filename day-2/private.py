@@ -7,7 +7,7 @@ class Car:
     _hello(): A public method that calls the private method and prints a message.
     """
     
-    @staticmethod  # Static method does not need access to instance (self).
+    @staticmethod  
     def __hello():
         """
         A private static method that prints a greeting message.
@@ -20,7 +20,7 @@ class Car:
         A public method that calls the private __hello method.
         It demonstrates how private methods can be accessed within the class.
         """
-        self.__hello()  # Calling private static method from a public method
+        self.__hello() 
         print("This is public")
 
 c1 = Car()
