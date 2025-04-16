@@ -37,16 +37,13 @@ class Complex:
         Returns:
         Complex: A new Complex number that is the sum of the current and passed complex numbers.
         """
-        newReal = self.real + num1.real  # Add real parts
-        newImg = self.img + num1.img  # Add imaginary parts
+        newReal = self.real + num1.real  
+        newImg = self.img + num1.img  
         return Complex(newReal, newImg)
 
-# Create two Complex number instances
 C1 = Complex(4, 5)
 C2 = Complex(5, 4)
 
-# Add the two Complex numbers
 ans = C1 + C2
 
-# Display the result of the addition
-print(ans.showNumber())  # Output the sum of the two complex numbers
+print(ans.showNumber()) 
