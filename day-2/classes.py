@@ -13,8 +13,7 @@ class Student:
         It also initializes the 'marks' attribute as an empty list.
         """
         self.no_of_subjects = int(input("Enter how many subjects are there: "))
-        self.marks = []  # List to store marks for each subject
-
+        self.marks = [] 
     @staticmethod
     def greet():
         """
@@ -28,20 +27,19 @@ class Student:
         Ask the user to input marks for each subject.
         The marks are then stored in the 'marks' list.
         """
-        self.greet()  # Call the static greet method
+        self.greet()  
         for i in range(1, self.no_of_subjects + 1):
             mark = int(input(f"Enter the marks of Subject {i}: "))
-            self.marks.append(mark)  # Add the entered mark to the marks list
+            self.marks.append(mark)  
 
     def average_marks(self):
         """
         Calculate and display the average marks of the student.
         It calls 'ask_marks' to gather the marks first.
         """
-        self.ask_marks()  # Gather marks from the user
-        avg = sum(self.marks) / self.no_of_subjects  # Calculate the average of marks
+        self.ask_marks() 
+        avg = sum(self.marks) / self.no_of_subjects 
         print("The average of marks is:", avg)
 
-# Create a Student object and calculate the average marks
 s1 = Student()
 s1.average_marks()
